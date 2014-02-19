@@ -98,7 +98,7 @@ re_data_type = re.compile(r'^ (?: 8 | 16 | 32 | 64 ) [USF] C [1234] $', re.VERBO
 time_style = xlwt.easyxf(num_format_str='#0.00')
 no_time_style = xlwt.easyxf('pattern: pattern solid, fore_color gray25')
 failed_style = xlwt.easyxf('pattern: pattern solid, fore_color red')
-noimpl_style = xlwt.easyxf('pattern: pattern solid')
+noimpl_style = time_style
 style_dict = {"failed": failed_style, "noimpl":noimpl_style}
 
 speedup_style = time_style
